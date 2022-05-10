@@ -1,11 +1,13 @@
 import React from 'react';
-import Button from '@mui/material/Button';
+import Button from '../../atoms/Button/Button';
+import TextField from '../../atoms/TextField/TextField'
 
 export default function Home() {
     return (
         <div>
-            test-architechure
-            <Button variant="text">Text</Button>
+            HOME <br/> <br/>
+            <TextField></TextField> <br/> <br/>
+            <Button></Button>
         </div>
     );
 }
