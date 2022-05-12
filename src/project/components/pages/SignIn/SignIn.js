@@ -54,7 +54,7 @@ const SignIn = (params) => {
             userId : id,
             password : password
         };
-        dispatch(postLoginSerivce(param));
+        console.log(dispatch(postLoginSerivce(param)));
     }
     
     const onInputsChang = (e) => {
