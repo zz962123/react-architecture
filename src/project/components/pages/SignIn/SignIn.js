@@ -22,7 +22,6 @@ const SignIn = (params) => {
     useEffect(() => {
         console.log("cjeck")
         if(isInitialMount.current){
-            chkip()
             isInitialMount.current = false;
         }else{
             if(loginService.length !== 0){
