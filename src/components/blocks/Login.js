@@ -8,8 +8,8 @@ function Login() {
 
     // const [style, setStyle] = useState(null);
     const isInitialMount = useRef(true);
-    const user = useSelector((state) => state.user.value)
-    const style = useStyle(user.name); 
+    const user = useSelector((state) => state.user)
+    const style = useStyle(user.value.name); 
     const dispatch = useDispatch()
     
     useEffect(()=>{
@@ -26,7 +26,7 @@ function Login() {
 
     return (
         <div>
-            <MuiButton variant="contained" onClick={() => {dispatch(login({name: "내 이름", age: 20, email: "email@gmail.com"}))}}>
+            <MuiButton variant="contained" onClick={() => {dispatch(login({ name: "내 이름", age: 20, email: "email@gmail.com" }))}}>
                 Login
             </MuiButton>
 
