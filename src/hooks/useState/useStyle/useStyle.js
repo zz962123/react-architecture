@@ -3,7 +3,6 @@ import { useEffect, useState } from 'react'
 function useStyle(userName) {
 
     console.log("hook test : ")
-
     const [style, setStyle] = useState("");
  
     useEffect(()=>{

@@ -6,7 +6,7 @@ interface InfoState {
     email : string
 }
 
-const initialState = { name: '', age: 0, email: '' } as InfoState 
+const initialState = { name: '', age: 5, email: '' } as InfoState 
 
 const userSlice = createSlice({
     name: 'user',   
